@@ -1,25 +1,17 @@
-import Click from './Components/Click';
+import NavBar from './Components/NavBar/NavBar';
+import './Styles/App.scss'
+import './Styles/global.scss'
 
 
-
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header>
-        <nav className='nav__bar'>
-          <div className='nav__bar-author'>
-            <h2>Michał Bodys</h2>
-            <p>Portfolio<span className='year'>2023</span></p>
-          </div>
-          <div className='nav__bar-links'>
-            <a href="/" className='nav__link'>Home</a>
-            <a href="/" className='nav__link'>About me</a>
-            <a href="/" className='nav__link'>Projects</a>
-            <a href="/" className='nav__link'>Skills</a>
-          </div>
-        </nav>
-      <Click/>
-        <div className='i/9'></div>
+      <header className='container'>
+       <NavBar/>
+        <div className='title-box'>
+        <h1 className='web-title'>Hello.<br/> this is my portfolio website,<br/>
+        i'm front end developer</h1>
+        </div>
       </header>
     </div>
   );
