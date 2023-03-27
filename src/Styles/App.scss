@@ -8,10 +8,21 @@ header {
     height: 100vh;
 }
 
+// .cursor{
+//     position: absolute;
+//     width: 30px;
+//     height: 30px;
+//     background:  #fff ;
 
+
+//     box-shadow: white 0px 0px 160px 50px ;
+//     border-radius: 50%;
+//     top: 50%;
+//     left: 505px;
+// }
 .title-box {
     display: flex;
-
+    height: 100vh;
     align-items: center;
 
     .web-title {
