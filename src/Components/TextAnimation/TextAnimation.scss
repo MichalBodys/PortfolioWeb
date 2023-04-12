@@ -1,0 +1,8 @@
+@import '../../Styles/Animations.scss';
+
+
+.animated{
+    font-family: 'Major Mono Display', monospace;
+    opacity: 0;
+    animation: text-change  6s  infinite;
+}

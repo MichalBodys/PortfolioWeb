@@ -1,5 +1,6 @@
+@import './Settings.scss';
+
 .App {
-    // background-image: $color-gradient;
     min-height: 100vh;
 }
 
@@ -8,25 +9,24 @@ header {
     height: 100vh;
 }
 
-// .cursor{
-//     position: absolute;
-//     width: 30px;
-//     height: 30px;
-//     background:  #fff ;
 
 
-//     box-shadow: white 0px 0px 160px 50px ;
-//     border-radius: 50%;
-//     top: 50%;
-//     left: 505px;
-// }
-.title-box {
-    display: flex;
-    height: 100vh;
-    align-items: center;
+.projects{
+    position: relative;
+   isolation: isolate;
+    padding: 15em;
+    height: 800px;
+    margin-top: 10em;
 
-    .web-title {
-        font-size: 7em;
-        line-height: 1.5em;
-    }
 }
+
+.projects::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: linear-gradient(359deg, #080808FF 0%, #071714FF 100%);
+    transform: skewY(-5deg);
+
+}
+

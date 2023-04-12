@@ -1,0 +1,27 @@
+.about__me {
+    display: flex;
+
+    .about__me-text {
+        position: relative;
+        font-size: 2em;
+        font-weight: 400;
+        align-content: start;
+        line-height: 2em;
+
+        .animate-text {
+            position: absolute;
+            bottom: 0;
+            font-weight: bold;
+        }
+    }
+
+    .about_me-icons {
+        width: 50%;
+        display: flex;
+        font-size:4em;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+}
