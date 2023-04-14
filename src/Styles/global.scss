@@ -4,6 +4,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* width */
@@ -44,11 +46,9 @@ a{
 
 body {
   height: 2vh;
-  margin: 0;
-  padding: 0;
   background-image: linear-gradient(320deg, #080808FF 0%, #0A2C27FF 100%);
   font-family: $font-text;
-  font-size: ($base-size * 1.1);
+  font-size: $base-size ;
   color: white;
   letter-spacing: 0.5px;
   background-size: 150%;
@@ -56,8 +56,6 @@ body {
 }
 
 .container {
+  margin-inline: 5%;
   width: 80%;
-  max-width: 1400px;
-  margin: 0 auto;
 }
-
