@@ -8,10 +8,10 @@ const NavBar = () => {
               <p>Portfolio<span className='year'>2023</span></p>
             </div>
             <div className='nav__bar-links'>
-              <a href="/" className='nav__link'>Home</a>
               <a href="/" className='nav__link'>About</a>
               <a href="/" className='nav__link'>Projects</a>
               <a href="/" className='nav__link'>Skills</a>
+              <a href="/" className='nav__link'>Contact</a>
               <div className='nav__burger-icon'>
                 <div className='burger-icon-line'>
               </div>

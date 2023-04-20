@@ -10,3 +10,15 @@ $font-text: 'Josefin Sans', sans-serif;;
 $radius: 5px;
 $base-size: 10px;
 
+$color-one: #03d468;
+$color-two: #0ca043;
+$color-three: #9df6c7;
+$color-four: #20328b;
+$color-five: #0051ff;
+
+
+@property --gradient-angel{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}

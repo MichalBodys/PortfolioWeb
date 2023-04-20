@@ -1,14 +1,16 @@
+@import '../../Styles/Settings.scss';
 .nav__bar {
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
     top: 0;
-    width: 85%;
+    width: 90%;
     padding: 1em;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(1em);
     background: inherit;
     z-index: 1000;
+    border-radius: $radius;
 
     .nav__bar-links {
         display: flex;
