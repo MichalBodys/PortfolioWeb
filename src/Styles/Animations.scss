@@ -1,35 +1,27 @@
 @import './Settings.scss';
-// @keyframes bg-animation {
-//     0% {
-//           background-position:  0% 0%;
-//       }
-//       100% {
-//           background-position: 100% 100%;
-//     }
-//   }
+@keyframes bg-animation {
+    0% {
+          background-position:  0% 0%;
+      }
+      100% {
+          background-position: 100% 100%;
+    }
+  }
 
-// @keyframes drop{
-//     0%{
-//       top: -20%
-//     }
-//     100%{
-//       top: 110%
-//     }
-//   }
+@keyframes drop{
+    0%{
+      top: -20%
+    }
+    100%{
+      top: 110%
+    }
+  }
 
-// @keyframes text-change  {
-//     0% { opacity: 0; transform: translateY(-200%);}
-//     25% { opacity: 1; transform: translateY(20%) }
-//     55% { opacity: 1; transform: translateY(5%) }
-//     75% { opacity: 1;transform: translateY(15%) }
-//     100% { opacity: 0;transform: translateY(-200%);}
-// }
+@keyframes text-change  {
+    0% { opacity: 0; transform: translateY(-200%);}
+    25% { opacity: 1; transform: translateY(20%) }
+    55% { opacity: 1; transform: translateY(5%) }
+    75% { opacity: 1;transform: translateY(15%) }
+    100% { opacity: 0;transform: translateY(-200%);}
+}
 
-// @keyframes spin {
-//     0% {
-//         --gradient-angel: 0deg;
-//     }
-//     100% {
-//         --gradient-angel: 360deg;
-//     }
-//   }

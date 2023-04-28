@@ -4,7 +4,7 @@ import Header from './Sections/header/Header';
 import AboutMe from './Sections/Aboutme/AboutMe';
 import './Styles/App.scss'
 import './Styles/global.scss'
-import { useRef, useState } from 'react';
+import {  useState } from 'react';
 import Projects from './Sections/projects/Projects';
 import Cursor from './Components/Cursor/Cursor';
 
@@ -16,34 +16,59 @@ const App = () => {
 // console.log(projects);
 //   console.log(projects[0].photos[0]);
 
+
 const  [count, setCount] = useState(0)
 const [btnMsg, setBtnMsg] = useState('Click me !')
 
 const clickHandler = () => {
   setCount(count + 1)
-  if (count === 3)  setBtnMsg("im still learning ")
+  if(count === 0)   setBtnMsg('Again!')
+  if(count === 3) setBtnMsg('that all.... for now')
+  if(count === 4) setCount(1) ;
+
+  console.log(count);
 };
 
 
   return (
   <div className="App">
-    <Cursor/>
+    {/* <Cursor/> */}
     <Header/>
     <AboutMe/>
     <Projects/>
-    <div className='skils'>
+    <section className='skils'>
       <div className='container'>
-        <button onClick={clickHandler}>{btnMsg}</button>
-        <div className='skils__box'>
-            <div className='skill-lane'><p><span className='first' style={{opacity: count >= 1 ? 1 : 0}}>React</span> <span className='second' style={{opacity: count >= 2 ? 1 : 0}}>SCSS</span> <span className='first' style={{opacity: count >= 1 ? 1 : 0}}>HTML</span><span className='third' style={{opacity: count >= 3 ? 1 : 0}}>CSS</span></p></div>
-            <div className='skill-lane'><p><span className='second' style={{opacity: count >= 2 ? 1 : 0}}>React</span> <span className='first' style={{opacity: count >= 1 ? 1 : 0}}>SCSS</span> <span className='third' style={{opacity: count >= 3 ? 1 : 0}}>HTML</span> <span className='first' style={{opacity: count >= 1 ? 1 : 0}}>CSS</span></p></div>
-            <div className='skill-lane'><p><span className='second' style={{opacity: count >= 2 ? 1 : 0}}>React</span> <span className='third' style={{opacity: count >= 3 ? 1 : 0}}>SCSS</span> <span className='first' style={{opacity: count >= 1 ? 1 : 0}}>HTML</span> <span className='second' style={{opacity: count >= 2 ? 1 : 0}}>CSS</span></p></div>
+          <button onClick={clickHandler}>{btnMsg}</button>
+        <div className="skills-box">
+        <div className='skill-box'>
+            <span className={(count === 0 ? 'show' : '')}>programing technologies that i already used</span>
+          </div>
+          <div className='skill-box'>
+            <span className={(count === 1 ? 'show' : '')}>html</span>
+            <span className={(count === 1 ? 'show' : '')}>Css</span>
+            <span className={(count === 1 ? 'show' : '')}>Sass</span>
+            <span className={(count === 1 ? 'show' : '')}>JavaScript</span>
+            <span className={(count === 1 ? 'show' : '')}>React</span>
+          </div>
+          <div className='skill-box'>
+            <span className={(count === 2 ? 'show' : '')}>Redux</span>
+            <span className={(count === 2 ? 'show' : '')}>GIT</span>
+            <span className={(count === 2 ? 'show' : '')}>NPM</span>
+            <span className={(count === 2 ? 'show' : '')}>Vue</span>
+            <span className={(count === 2 ? 'show' : '')}>Yarn</span>
+          </div>
+          <div className='skill-box'>
+            <span className={(count === 3 ? 'show' : '')}>Bootstrap</span>
+            <span className={(count === 3 ? 'show' : '')}>RWD</span>
+            <span className={(count === 3 ? 'show' : '')}>AJAX</span>
+          </div>
+          <div className='skill-box'>
+            <span className={(count === 4 ? 'show' : '')}>i learn something new every day</span>
+          </div>
+
         </div>
-
-
       </div>
-
-    </div>
+    </section>
   </div>
   );
 }
