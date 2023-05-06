@@ -1,6 +1,8 @@
 .about__me {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    height: 70vh;
 
     .about__me-text {
         position: relative;

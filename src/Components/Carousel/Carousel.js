@@ -14,7 +14,7 @@ const Carousel = ({ projectId }) => {
     }
     const next = () => {
       setCurr((curr) => (curr === 3 -1 ? 0 : curr + 1))
-    //   console.log(curr);
+      // console.log(curr);
     }
     // console.log(project);
 
@@ -31,6 +31,11 @@ const Carousel = ({ projectId }) => {
          <div className='carousel-buttons'>
             <button onClick={prev}><i className="fa-solid fa-angle-left"></i></button>
             <button onClick={next}><i className="fa-solid fa-angle-right"></i></button>
+        </div>
+        <div className='carousel-dots'>
+          <div className={curr === 0 ? 'active' : ''}></div>
+          <div className={curr === 1 ? 'active' : ''}></div>
+          <div className={curr === 2 ? 'active' : ''}></div>
         </div>
     </div>
     )

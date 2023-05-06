@@ -2,7 +2,7 @@
 
 
 .animated{
-    font-family: 'Major Mono Display', monospace;
     opacity: 0;
+    font-weight: bold;
     animation: text-change  6s  infinite;
 }

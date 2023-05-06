@@ -40,25 +40,32 @@ a{
   text-decoration: none;
   color: inherit;
 }
+.socials{
+  cursor: none;
+  transition: all .3s, transform .3s;
+}
+
+.socials:hover{
+ color:#818178;
+ transform: scale(1.3);
+}
 
 
-// background-image: linear-gradient(341deg, #080808FF 0%, #082527FF 100%);
 
 body {
 
-  // cursor: none;
-  height: 2vh;
+  cursor: none;
   background-image: linear-gradient(320deg, #080808FF 0%, #0A2C27FF 100%);
-  font-family: $font-text;
+  font-family: 'Major Mono Display', monospace;
   font-size: $base-size ;
   color: white;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.7px;
   background-size: 150%;
   animation: bg-animation 10s infinite alternate ease-in-out ;
 }
 
 .container {
-  margin: auto;
+  margin:  auto;
   padding: 5%;
   width: 100%;
 }

@@ -7,7 +7,7 @@ const initialState = {
     projects: [
         {
             id: 1,
-            title: 'Speach therapist Website',
+            title: 'speach therapist website',
             release: '04.2023',
             photos: [
               {
@@ -31,7 +31,7 @@ const initialState = {
         },
         {
             id: 2,
-            title: 'Simple ToDo List',
+            title: 'simple todo list',
             release: '11.2022',
             photos: [
               {

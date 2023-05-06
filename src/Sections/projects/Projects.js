@@ -10,19 +10,19 @@ const Projects = () => {
     const projects = useSelector(state => state.projects)
 
     return(
-      <div className='projects container'>
+      <section id='projects' className='projects container'>
         {projects.map(project =>
         <div className='project_box' key={project.id}>
             <div className='project-card'>
 
-                <p><span>Title:</span> {project.title}</p>
-                <p><span>Release:</span> {project.release}</p>
-              
+                <p><span>title:</span> {project.title}</p>
+                <p><span>release:</span> {project.release}</p>
+
             </div>
             <Carousel projectId={project.id}/>
         </div>
         )}
-      </div>
+      </section>
     )
 }
 

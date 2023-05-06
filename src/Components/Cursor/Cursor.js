@@ -6,6 +6,7 @@ const Cursor = () => {
 
     const [cursorX, setCursorX] = useState()
     const [cursorY, setCursorY] = useState()
+    const [cursorHover, setCursorHover] =useState(false)
 
 
     window.addEventListener('mousemove', (e)=>{
@@ -13,12 +14,15 @@ const Cursor = () => {
       setCursorY(e.clientY)
       // console.log(cursorX);
       // console.log(cursorY);
+      e.target.className === 'nav__link' && 'author' ? setCursorHover(true) : setCursorHover(false)
+      // console.log(cursorHover);
     })
     return(
-        <div className="cursor"style={{left: cursorX + 'px', top: cursorY+ 'px'}}></div>
+        <div className="cursor" style={{
+          left:cursorX + 'px', top: cursorY + 'px',
+          ...( cursorHover ? {transform: 'scale(3)', zIndex: 2} : {} ),
+        }}></div>
     )
-
-
 
 }
 
