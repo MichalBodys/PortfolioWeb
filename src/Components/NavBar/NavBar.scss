@@ -1,4 +1,4 @@
-@import '../../Styles/Settings.scss';
+@import '../../Styles/App.scss';
 
 
 
@@ -13,7 +13,7 @@
     padding: 1em;
     backdrop-filter: blur(1em);
     background: inherit;
-    z-index: 1000;
+    z-index: 10;
     border-radius: $radius;
 
     .nav__bar-links {
@@ -22,10 +22,15 @@
         justify-content: center;
         align-items: center;
         gap: 1em;
+        z-index: 12;
 
-        .nav__link{
+
+        .nav__link {
             font-size: 1.1em;
             padding: 1em;
+
+
+
 
         }
 
@@ -35,10 +40,8 @@
 
     .nav__burger-icon {
         display: none;
-        position: absolute;
-        right: -5em;
         cursor: pointer;
-        padding:1em;
+        padding: 1em;
 
         .burger-icon-line {
             display: flex;
@@ -81,7 +84,7 @@
 .nav__burger-icon:hover .burger-icon-line::after {
     width: 2em;
 }
-.nav__burger-icon:hover .burger-icon-line{
+
+.nav__burger-icon:hover .burger-icon-line {
     width: 2em;
 }
-

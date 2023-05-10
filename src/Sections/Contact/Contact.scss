@@ -1,5 +1,4 @@
-@import '../../Styles/Settings.scss';
-@import '../../Styles/global.scss';
+@import '../../Styles/App.scss';
 
 .contact {
     background: $color-second;
@@ -7,20 +6,21 @@
 
     .contact_title {
         text-align: center;
-        font-size: 2.5em;
+        font-size: 3.5em;
         margin-bottom: 10%;
     }
 
     .form_box {
         display: flex;
         align-items: center;
+       
 
 
         p {
             writing-mode: vertical-lr;
             font-family: 'Major Mono Display', monospace;
             font-size: 3.5em;
-            margin-left: 20%;
+            margin-left: 25%;
         }
 
         .contact_form {
@@ -83,6 +83,10 @@
                 background-color: inherit;
                 border-bottom: 1px solid $color-main;
                 transition: background .3s, box-shadow .3s;
+            }
+
+            textarea{
+                height: 4em;
             }
 
             input:focus,

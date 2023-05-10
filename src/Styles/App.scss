@@ -1,45 +1,9 @@
 @import './Settings.scss';
 @import './Animations.scss';
+@import './Global.scss';
+@import './mediaQueries.scss';
 
 
-
-header {
-    position: relative;
-    height: 100vh;
-}
-
-.footer {
-    background: $color-second;
-
-
-    .container {
-        padding: 3%;
-
-        .footer-data {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-
-            .copyright{
-                font-size: 1.5em;
-                opacity: 0.5;
-            }
-
-            .social-list{
-                width: 10em;
-                display: flex;
-                justify-content: space-evenly;
-                list-style: none;
-                font-size: 2em;
-            }
-
-        }
-    }
-}
-
-
-.nav__link:hover ~ .cursor{transform: scale(2)}
 
 
 

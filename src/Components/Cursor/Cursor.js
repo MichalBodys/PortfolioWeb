@@ -14,7 +14,8 @@ const Cursor = () => {
       setCursorY(e.clientY)
       // console.log(cursorX);
       // console.log(cursorY);
-      e.target.className === 'nav__link' && 'author' ? setCursorHover(true) : setCursorHover(false)
+      e.target.className ===  'nav__link' || e.target.className === 'author' ? setCursorHover(true) : setCursorHover(false)
+
       // console.log(cursorHover);
     })
     return(

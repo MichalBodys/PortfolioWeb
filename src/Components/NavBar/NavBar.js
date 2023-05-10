@@ -21,10 +21,10 @@ const NavBar = () => {
               <a href="#projects" className='nav__link'>projects</a>
               <a href="#skills" className='nav__link'>skills</a>
               <a href="#contact" className='nav__link'>contact</a>
-              <div className='nav__burger-icon'>
+          </div>
+          <div className='nav__burger-icon'>
                 <div className='burger-icon-line'></div>
             </div>
-          </div>
         </nav>
     )
 }

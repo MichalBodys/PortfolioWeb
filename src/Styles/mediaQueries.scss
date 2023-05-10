@@ -1,0 +1,356 @@
+@media (max-width: 860px) {
+
+    .nav__bar {
+
+        .nav__link {
+            display: none;
+        }
+
+        .nav__burger-icon {
+
+            display: block;
+        }
+    }
+
+    header {
+        .title-box {
+
+            .web-title {
+                font-size: 2em;
+            }
+        }
+    }
+
+
+
+    .about__me {
+        font-size: 0.9em;
+
+    }
+
+
+    .projects {
+        .project_box {
+            flex-direction: column;
+        }
+    }
+
+
+
+    .skills{
+
+        .skills-box{
+            margin-top: 10em;
+
+
+
+        }
+
+        button{
+            margin-top: 10em;
+        }
+    }
+
+
+    .contact{
+        .contact_title{
+            font-size: 4em;
+        }
+    }
+
+
+}
+
+
+@media(max-width:982px) {
+    header {
+        .title-box {
+
+            .web-title {
+                font-size: 4.5em;
+            }
+        }
+    }
+}
+
+@media(min-width:1300px) {
+    // HEADER//
+
+    .nav__bar {
+        font-size: 1.5em;
+    }
+
+    header {
+        .title-box {
+
+            .web-title {
+                font-size: 8em;
+            }
+        }
+    }
+
+    // About ME //
+
+    .about__me {
+        font-size: 2em;
+
+    }
+
+
+    // Project //
+    .projects {
+
+        .project_box {
+
+
+            .project-card {
+                font-size: 1.6em;
+                height: 200px;
+                width: 450px;
+            }
+
+
+            .carousel {
+                width: 1000px;
+                height: 450px;
+
+                .carousel-slide {
+                    width: 1000px;
+                    height: 450px;
+                }
+            }
+
+
+        }
+    }
+
+    // Skills //
+
+    .skills {
+
+        button {
+            font-size: 1.7em;
+            height: 65px;
+            width: 250px;
+        }
+    }
+
+    // Contact //
+    .contact {
+
+        .contact_title {
+            font-size: 4em;
+        }
+
+        .form_box {
+            gap: 15%;
+
+
+            p {
+                font-size: 6em;
+            }
+
+            .contact_form {
+                gap: 10em;
+
+
+                button {
+                    font-size: 2em;
+                    width: 150px;
+                    height: 70px;
+                }
+
+            }
+
+        }
+
+    }
+
+    // Footer //
+    .footer-data {
+        font-size: 1.5em;
+    }
+
+
+}
+
+
+@media (max-width: 672px) {
+
+    header {
+
+        .title-box {
+
+
+            .web-title {
+                text-align: center;
+                font-size: 3.5em;
+            }
+        }
+    }
+
+
+    // About me //
+
+    .about__me {
+        position: relative;
+        font-size: 0.7em;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20%;
+
+        h2 {
+            text-align: center;
+        }
+
+        .animated{
+            position: absolute;
+            width: 100%;
+            text-align: center;
+
+        }
+    }
+
+    // Projects //
+
+
+    .projects {
+
+        .project_box {
+
+
+            .project-card {
+                font-size: 1em;
+                height: 70px;
+                width: 250px;
+            }
+
+
+            .carousel {
+                width: 450px;
+                height: 200px;
+
+                .carousel-slide {
+                    width: 450px;
+                    height: 200px;
+                }
+            }
+
+
+        }
+    }
+
+
+
+    // Skills //
+
+    .skills{
+
+
+        .skill-box{
+            text-align: center;
+            font-size: 0.8em;
+        }
+    }
+
+
+    // Contact //
+
+    .contact{
+        font-size: 0.8em;
+        .form_box{
+
+
+            p{
+                font-size: 4em;
+            }
+        }
+    }
+
+    // Footer //
+
+    .footer{
+
+        .footer-data{
+            font-size: .7em;
+        }
+    }
+
+
+}
+
+@media (max-width: 760px) {
+    .about__me {
+        font-size: 0.7em;
+
+    }
+}
+
+
+
+@media (max-width: 476px){
+
+
+ // Projects //
+
+
+    .projects {
+
+        .project_box {
+            margin-top: 4em;
+
+            .project-card {
+                font-size: 1em;
+                height: 70px;
+                width: 250px;
+            }
+
+
+            .carousel {
+                width: 350px;
+                height: 200px;
+
+                .carousel-slide {
+                    width: 350px;
+                    height: 200px;
+                }
+            }
+
+
+        }
+    }
+
+}
+
+
+@media (max-width: 476px){
+
+    header{
+        .nav__bar-author{
+            font-size: 1.5em;
+        }
+    }
+
+
+    .skills{
+
+        button{
+            font-size: 1.2em;
+        }
+
+        .skill-box{
+            font-size: 0.6em;
+            line-height: 1.5em;
+        }
+    }
+
+    .footer{
+
+        .footer-data{
+            font-size: 1em;
+            text-align: center;
+            line-height: 1em   ;
+        }
+    }
+
+}

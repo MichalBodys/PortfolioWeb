@@ -31,6 +31,7 @@
         border: $color-main 0.125em solid;
         height: 4em;
         width: 12em;
+        margin-top: 10%;
         border-radius: $radius;
         text-shadow: 0 0 0.125em hsla(111, 82%, 33%, 0.3);
         box-shadow: inset 0 0 0.5em 0 $color-main, 0 0 0.5em 0 $color-main;
@@ -94,7 +95,7 @@
     position: relative;
     height: 400px;
     font-size: 1.8em;
-
+    margin-top: 10%;
 
 
     .skill-box {
