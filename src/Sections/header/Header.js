@@ -4,15 +4,17 @@ import './Header.scss'
 
 const Header = () => {
     return(
-        <header id='header'>
-            <div className='container'>
+        <header id='header' >
             <NavBar/>
-             <div className='title-box'>
-             <h1 className='web-title'>hello.<br/> this is my portfolio website,<br/>
-             i'm front end developer</h1>
-             </div>
+            <div className='container'>
+                <div className='title-box'>
+                <h1 className='web-title'>hello.<br/> this is my portfolio website,<br/>
+                i'm front end developer</h1>
+                </div>
             </div>
+
        </header>
+
     )
 }
 

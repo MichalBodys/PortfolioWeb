@@ -1,4 +1,5 @@
 
+import { useState } from 'react'
 import './NavBar.scss'
 
 
@@ -6,8 +7,11 @@ import './NavBar.scss'
 
 const NavBar = () => {
 
+  const [isActive, setActive] = useState(false)
 
-
+  const clickHandler = () => {
+   setActive(!isActive);
+  }
 
 
   return(
@@ -16,13 +20,13 @@ const NavBar = () => {
               <a href='#header'><h2 className='author'>michał bodys</h2></a>
               <p>portfolio<span className='year'>2023</span></p>
             </div>
-            <div className='nav__bar-links'>
-              <a href="#about" className='nav__link'>about</a>
-              <a href="#projects" className='nav__link'>projects</a>
-              <a href="#skills" className='nav__link'>skills</a>
-              <a href="#contact" className='nav__link'>contact</a>
+            <div className={`nav__bar-links ${isActive ? 'active': ''}`}>
+              <a href="#about" className='nav__link' onClick={clickHandler}>about</a>
+              <a href="#projects" className='nav__link' onClick={clickHandler} >projects</a>
+              <a href="#skills" className='nav__link' onClick={clickHandler}>skills</a>
+              <a href="#contact" className='nav__link' onClick={clickHandler}>contact</a>
           </div>
-          <div className='nav__burger-icon'>
+          <div className='nav__burger-icon' onClick={clickHandler}>
                 <div className='burger-icon-line'></div>
             </div>
         </nav>

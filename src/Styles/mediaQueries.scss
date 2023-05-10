@@ -1,14 +1,18 @@
+
 @media (max-width: 860px) {
 
     .nav__bar {
 
-        .nav__link {
+        .nav__bar-links {
             display: none;
         }
+    }
+
+    .nav__bar {
 
         .nav__burger-icon {
 
-            display: block;
+            display: block
         }
     }
 
@@ -37,23 +41,23 @@
 
 
 
-    .skills{
+    .skills {
 
-        .skills-box{
-            margin-top: 10em;
+        .skills-box {
+            margin-top: 8em;
 
 
 
         }
 
-        button{
+        button {
             margin-top: 10em;
         }
     }
 
 
-    .contact{
-        .contact_title{
+    .contact {
+        .contact_title {
             font-size: 4em;
         }
     }
@@ -203,7 +207,7 @@
             text-align: center;
         }
 
-        .animated{
+        .animated {
             position: absolute;
             width: 100%;
             text-align: center;
@@ -244,10 +248,10 @@
 
     // Skills //
 
-    .skills{
+    .skills {
 
 
-        .skill-box{
+        .skill-box {
             text-align: center;
             font-size: 0.8em;
         }
@@ -256,12 +260,13 @@
 
     // Contact //
 
-    .contact{
+    .contact {
         font-size: 0.8em;
-        .form_box{
+
+        .form_box {
 
 
-            p{
+            p {
                 font-size: 4em;
             }
         }
@@ -269,9 +274,9 @@
 
     // Footer //
 
-    .footer{
+    .footer {
 
-        .footer-data{
+        .footer-data {
             font-size: .7em;
         }
     }
@@ -288,10 +293,10 @@
 
 
 
-@media (max-width: 476px){
+@media (max-width: 476px) {
 
 
- // Projects //
+    // Projects //
 
 
     .projects {
@@ -323,33 +328,55 @@
 }
 
 
-@media (max-width: 476px){
+@media (max-width: 476px) {
 
-    header{
-        .nav__bar-author{
-            font-size: 1.5em;
+    header {
+
+        .container {
+
+            .nav__bar-author {
+                font-size: 1.5em;
+            }
         }
     }
 
 
-    .skills{
+    .skills {
 
-        button{
+        button {
             font-size: 1.2em;
         }
 
-        .skill-box{
+        .skill-box {
             font-size: 0.6em;
             line-height: 1.5em;
         }
     }
 
-    .footer{
+    .footer {
 
-        .footer-data{
+        .footer-data {
             font-size: 1em;
             text-align: center;
-            line-height: 1em   ;
+            line-height: 1em;
+        }
+    }
+
+    .contact {
+        font-size: 0.8em;
+
+        .contact_title {
+            margin-bottom: 25%;
+        }
+
+        .form_box {
+            justify-content: space-between;
+
+            p {
+                margin: 0 auto;
+                font-size: 4em;
+
+            }
         }
     }
 
