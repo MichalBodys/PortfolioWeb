@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux'
-import './Carousel.scss'
 import { useState } from 'react'
+import './Carousel.scss'
 
 const Carousel = ({ projectId }) => {
 
