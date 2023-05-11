@@ -3,7 +3,6 @@
 import Header from './Sections/header/Header';
 import AboutMe from './Sections/Aboutme/AboutMe';
 import Projects from './Sections/projects/Projects';
-import Cursor from './Components/Cursor/Cursor';
 import Skills from './Sections/Skills/Skills';
 import Contact from './Sections/Contact/Contact';
 import LineDrop from './Components/Linedrop/Linedrop';
@@ -20,7 +19,6 @@ const App = () => {
 
   return (
   <div className="App">
-    {/* <Cursor/> */}
     <LineDrop/>
     <Header/>
     <AboutMe/>

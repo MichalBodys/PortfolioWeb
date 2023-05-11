@@ -41,7 +41,6 @@ a{
   color: inherit;
 }
 .socials{
-  cursor: none;
   transition: all .3s, transform .3s;
 }
 
@@ -53,8 +52,6 @@ a{
 
 
 body {
-
-  // cursor: none;
   background-image: linear-gradient(320deg, #080808FF 0%, #0A2C27FF 100%);
   font-family: 'Major Mono Display', monospace;
   font-size: $base-size ;

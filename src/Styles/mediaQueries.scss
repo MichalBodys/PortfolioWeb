@@ -1,10 +1,31 @@
-
 @media (max-width: 860px) {
 
     .nav__bar {
 
         .nav__bar-links {
-            display: none;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            inset: 0;
+            gap: 2em;
+            background: black;
+            height: 100vh;
+            clip-path: circle(0% at 100% 0.5%);
+            transition: clip-path .8s;
+            font-size: 1.5em;
+            &.active {
+               clip-path: 140% at 95.3% 8.5%;
+
+
+               .nav__link::before{
+                background: $color-main;
+                height: 1px;
+                bottom: 45%;
+               }
+
+            }
         }
     }
 
