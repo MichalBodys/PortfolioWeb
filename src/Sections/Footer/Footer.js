@@ -11,7 +11,7 @@ const Footer = () => {
               <span className='copyright'>&copy;2023</span> michał bodys poland
               </p>
                <ul className='social-list'>
-                <li><a href="www.linkedin.com/in/michal-bodys"><i className="fa-brands fa-linkedin socials" ></i></a></li>
+                <li><a href="https://www.linkedin.com/in/michal-bodys/  "><i className="fa-brands fa-linkedin socials" ></i></a></li>
                 <li><a href="https://github.com/MichalBodys"><i className="fa-brands fa-github socials"></i></a></li>
                 <li><a href='mailto: bodysmic@gmail.com'><i className="fa-solid fa-envelope socials"></i></a></li>
               </ul>

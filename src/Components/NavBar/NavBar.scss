@@ -6,6 +6,7 @@
 .nav__bar {
     position: fixed;
     display: flex;
+    opacity: 0;
     align-items: center;
     justify-content: space-between;
     top: 0;
@@ -15,6 +16,7 @@
     background: inherit;
     z-index: 10;
     border-radius: $radius;
+    animation: ShowText 3s .2s forwards;
 
 
     .nav__bar-author{

@@ -12,8 +12,11 @@ header {
 
 
     .web-title {
+        opacity: 0;
         font-size: 6em;
         line-height: 1.5em;
+        animation: ShowText 3.5s .3s forwards ;
+        transition: opacity;
     }
 }
 

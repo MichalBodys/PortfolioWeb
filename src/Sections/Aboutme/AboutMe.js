@@ -2,11 +2,12 @@
 import TextAnimation from '../../Components/TextAnimation/TextAnimation'
 import './AboutMe.scss'
 
-
 const AboutMe = () => {
+
+
     return(
         <section id='about' className='container about__me'>
-          <div className='about__me-text' >
+          <div className='about__me-text'  >
               <h2>i'm Michał,<br/> and i like to make things <br/> that</h2>
               <div className='animate-text'>
                 <TextAnimation/>

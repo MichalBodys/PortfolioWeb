@@ -12,12 +12,12 @@ const initialState = {
             photos: [
               {
                  nmb: 4,
-              src: 'https://cdn.pixabay.com/photo/2022/01/24/14/48/road-6963584_1280.jpg',
+              src: './assets/img/magda1.png',
               description: 'lorem'
             },
             {
                nmb: 5,
-              src: 'https://cdn.pixabay.com/photo/2023/04/11/15/48/groyne-7917596_1280.jpg',
+              src: './assets/img/magda2.png',
               description: 'lorem lorem'
             },
             {
