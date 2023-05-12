@@ -1,8 +1,19 @@
 import { useSelector } from 'react-redux'
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import './Carousel.scss'
+import { motion, useInView, useAnimation } from 'framer-motion'
 
 const Carousel = ({ projectId }) => {
+
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true })
+    const mainControls = useAnimation()
+
+    useEffect(() => {
+      if(isInView){
+        mainControls.start('visible');
+      }
+    })
 
 
     const projects = useSelector(state => state.projects)
@@ -19,7 +30,14 @@ const Carousel = ({ projectId }) => {
     // console.log(project);
 
     return(
-    <div className='carousel'>
+    <motion.div ref={ref} className='carousel'
+    variants={{
+      hidden: {opacity: 0, y:75},
+      visible: {opacity: 1, y:0}
+    }}
+    initial="hidden"
+    animate={mainControls}
+    transition={{duration: 1}}>
         {project[0].photos.map(photo =>
         <div className='carousel-slides' key={photo.nmb} style={{ transform: `translateX(-${curr * 100}%)`}}>
           <div className='carousel-slide'>
@@ -37,7 +55,7 @@ const Carousel = ({ projectId }) => {
           <div className={curr === 1 ? 'active' : ''}></div>
           <div className={curr === 2 ? 'active' : ''}></div>
         </div>
-    </div>
+    </motion.div>
     )
 
 

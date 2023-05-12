@@ -1,10 +1,19 @@
 import './Contact.scss'
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser'
+import { motion, useInView, useAnimation } from 'framer-motion'
 
 const Contact = () => {
 
   const form = useRef();
+  const ref = useRef(null)
+  const isInView = useInView(ref, {once: true})
+  const mainControls = useAnimation()
+  useEffect(()=> {
+    if(isInView){
+      mainControls.start('visible')
+    }
+  })
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -23,7 +32,15 @@ const Contact = () => {
 
     return(
     <section id='contact' className='contact'>
-        <div className='container'>
+        <motion.div ref={ref} className='container'
+        variants={{
+          hidden: {opacity: 0, y:75},
+          visible: {opacity: 1, y:0 }
+        }}
+        initial='hidden'
+        animate={mainControls}
+        transition={{delay: 0.2 ,duartion: 1.5}}
+        >
             <h2 className='contact_title'>contact me </h2>
           <div className='form_box'>
             <form ref={form} className='contact_form' onSubmit={sendEmail}>
@@ -42,7 +59,7 @@ const Contact = () => {
             </form>
             <p>let's work togheter</p>
           </div>
-        </div>
+        </motion.div>
     </section>
     )
 }

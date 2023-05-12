@@ -1,8 +1,20 @@
-import { useState } from 'react'
 import './Skills.scss'
+import { useState, useRef, useEffect } from 'react'
+import { motion, useInView, useAnimation } from 'framer-motion'
 
 
 const Skills = () => {
+
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true })
+    const mainControls = useAnimation()
+
+    useEffect(() => {
+      if(isInView){
+        mainControls.start('visible');
+      }
+    })
+
 
     const  [count, setCount] = useState(0)
     const [btnMsg, setBtnMsg] = useState('click Me !')
@@ -19,9 +31,16 @@ const Skills = () => {
 
         return(
             <section id='skills' className='skills'>
-              <div className='container'>
+              <motion.div  ref={ref} className='container'
+               variants={{
+                hidden: {opacity: 0, y: 75},
+                visible: {opacity: 1, y: 0}
+              }}
+              initial="hidden"
+              animate={mainControls}
+              transition={{duration: 1}}>
                   <button onClick={clickHandler}>{btnMsg}</button>
-                <div className="skills-box">
+                <div  className="skills-box">
                 <div className='skill-box'>
                     <span className={(count === 0 ? 'show' : '')}>programing technologies that i already used</span>
                   </div>
@@ -49,7 +68,7 @@ const Skills = () => {
                   </div>
 
                 </div>
-              </div>
+              </motion.div>
             </section>
         )
 }

@@ -352,7 +352,8 @@
 @media (max-width: 476px) {
 
     header {
-
+        height: 100vh;
+        margin-bottom: 0;
         .container {
 
             .nav__bar-author {
