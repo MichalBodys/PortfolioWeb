@@ -5,6 +5,11 @@ import { motion, useInView, useAnimation } from 'framer-motion'
 
 const Contact = () => {
 
+  const nameInput = useRef()
+  const phoneInput = useRef()
+  const emailInput = useRef()
+  const msgInput = useRef()
+
   const form = useRef();
   const ref = useRef(null)
   const isInView = useInView(ref, {once: true})
@@ -30,6 +35,8 @@ const Contact = () => {
 
 
 
+
+
     return(
     <section id='contact' className='contact'>
         <motion.div ref={ref} className='container'
@@ -39,22 +46,22 @@ const Contact = () => {
         }}
         initial='hidden'
         animate={mainControls}
-        transition={{delay: 0.2 ,duartion: 1.5}}
+        transition={{delay: 0.2 ,duartion: 1}}
         >
             <h2 className='contact_title'>contact me </h2>
           <div className='form_box'>
             <form ref={form} className='contact_form' onSubmit={sendEmail}>
                 <label htmlFor="name">name</label>
-                <input type="text" name='user_name' placeholder='Full Name'/>
+                <input  ref={nameInput} type="text" name='user_name' placeholder='Full Name'/>
 
                 <label htmlFor="phone">phone</label>
-                <input type="tel" name='user_phone' placeholder='Phone number'/>
+                <input ref={phoneInput} type="tel" name='user_phone' placeholder='Phone number'/>
 
                 <label htmlFor="email">e-mail</label>
-                <input type="email" name='user_email' placeholder='E-mail' />
+                <input  ref={emailInput} type="email" name='user_email' placeholder='E-mail' />
 
                 <label htmlFor="msg">message</label>
-                <textarea name='message' placeholder='your message'></textarea>
+                <textarea ref={msgInput} name='message' placeholder='your message'></textarea>
                 <button type='submit' value='Send'>send</button>
             </form>
             <p>let's work togheter</p>
