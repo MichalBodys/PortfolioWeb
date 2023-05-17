@@ -1,8 +1,13 @@
 
+
 import NavBar from '../../Components/NavBar/NavBar'
 import './Header.scss'
 
-const Header = () => {
+
+
+const Header = (params) => {
+
+
     return(
         <header id='header' >
             <NavBar/>

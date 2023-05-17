@@ -17,6 +17,7 @@ const Projects = () => {
 
                 <p><span>title:</span> {project.title}</p>
                 <p><span>release:</span> {project.release}</p>
+                <p className='project_visit'><a href={project.url}>Visit site</a></p>
 
             </div>
             <Carousel projectId={project.id}/>

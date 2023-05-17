@@ -46,7 +46,7 @@ const AboutMe = () => {
           animate={rightControls}
           transition={{duration: 1}}
           className='about_me-icons'>
-            <a href="www.linkedin.com/in/michal-bodys"><i className="fa-brands fa-linkedin socials" ></i></a>
+            <a href="https://www.linkedin.com/in/michal-bodys/"><i className="fa-brands fa-linkedin socials" ></i></a>
             <a href="https://github.com/MichalBodys"><i className="fa-brands fa-github socials"></i></a>
             <a href='mailto: bodysmic@gmail.com'><i className="fa-solid fa-envelope socials"></i></a>
           </motion.div>

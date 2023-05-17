@@ -3,27 +3,30 @@ const reducer = (state, action) => {
   return state;
 };
 
+
+
 const initialState = {
     projects: [
         {
             id: 1,
             title: 'speach therapist website',
             release: '04.2023',
+            url: 'https://logopeda-dialog.pl/',
             photos: [
               {
                  nmb: 4,
               src: './assets/img/magda1.png',
-              description: 'lorem'
+              description: 'layout made for individual requirements  '
             },
             {
                nmb: 5,
               src: './assets/img/magda2.png',
-              description: 'lorem lorem'
+              description: 'headless cms connected'
             },
             {
                nmb: 6,
-              src: 'https://cdn.pixabay.com/photo/2012/06/19/10/32/owl-50267_1280.jpg',
-              description: 'lorem lorem lorem'
+              src: './assets/img/magda3.png',
+              description: 'responsive layout in all devices'
             }
 
           ]
@@ -33,29 +36,29 @@ const initialState = {
             id: 2,
             title: 'simple todo list',
             release: '11.2022',
+            url: 'https://silver-sawine-23a225.netlify.app',
             photos: [
               {
               nmb: 1,
               src: './assets/img/todo1.png',
-              description: 'lorem'
+              description: 'multiple cards variety'
             },
             {
               nmb: 2,
               src: './assets/img/todo2.png',
-              description: 'lorem lorem'
+              description: 'highlighting favorite positions'
             },
             {
               nmb: 3,
               src: './assets/img/todo3.png',
-              description: 'lorem lorem lorem'
+              description: 'posibility to adding new lists'
             }
 
           ]
         }
     ],
 
-
-    sentences:['work well', 'connect people', 'look great']
+    sentences:['work well', 'connect people', 'look great'],
 };
 
 const store = createStore(

@@ -42,6 +42,24 @@
             border: 0.125em solid $color-main;
 
 
+            .project_visit {
+                display:inline-block;
+                width: 100px;
+                margin: auto;
+                text-align: center;
+                border-radius: $radius;
+                background: $color-gradientTwo;
+                box-shadow: inset 0 0 0.2em 0 $color-main, 0 0 0.2em 0 $color-main;
+                border: 0.125em solid $color-main;
+                transition: background .5s, color .3s, font-weight .3s ;
+            }
+            .project_visit:hover{
+                background: $color-main;
+                color: black;
+                font-weight: bold;
+            }
+
+
             p {
                 padding: .5em;
             }

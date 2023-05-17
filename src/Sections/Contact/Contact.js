@@ -36,7 +36,6 @@ const Contact = () => {
 
 
 
-
     return(
     <section id='contact' className='contact'>
         <motion.div ref={ref} className='container'
@@ -52,16 +51,16 @@ const Contact = () => {
           <div className='form_box'>
             <form ref={form} className='contact_form' onSubmit={sendEmail}>
                 <label htmlFor="name">name</label>
-                <input  ref={nameInput} type="text" name='user_name' placeholder='Full Name'/>
+                <input  ref={nameInput} type="text" name='user_name' placeholder='Full Name' required/>
 
-                <label htmlFor="phone">phone</label>
-                <input ref={phoneInput} type="tel" name='user_phone' placeholder='Phone number'/>
+                <label htmlFor="phone" >phone</label>
+                <input ref={phoneInput}  type="number" name='user_phone' placeholder='Phone number' required/>
 
                 <label htmlFor="email">e-mail</label>
-                <input  ref={emailInput} type="email" name='user_email' placeholder='E-mail' />
+                <input  ref={emailInput} type="email" name='user_email' placeholder='E-mail' required/>
 
                 <label htmlFor="msg">message</label>
-                <textarea ref={msgInput} name='message' placeholder='your message'></textarea>
+                <textarea ref={msgInput} name='message' placeholder='your message' required></textarea>
                 <button type='submit' value='Send'>send</button>
             </form>
             <p>let's work togheter</p>

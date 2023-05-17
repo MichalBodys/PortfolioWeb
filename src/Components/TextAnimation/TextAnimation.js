@@ -24,7 +24,7 @@ const TextAnimation = () => {
                 setItems(connectPplSentence)
             }
         },
-        play ? 6000 : null
+        play ? 4500 : null
     )
 
 

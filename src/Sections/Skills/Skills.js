@@ -55,7 +55,7 @@ const Skills = () => {
                     <span className={(count === 2 ? 'show' : '')}>redux</span>
                     <span className={(count === 2 ? 'show' : '')}>Git</span>
                     <span className={(count === 2 ? 'show' : '')}>npm</span>
-                    {/* <span className={(count === 2 ? 'show' : '')}>Vue</span> */}
+                    <span className={(count === 2 ? 'show' : '')}>nunjucks</span>
                     <span className={(count === 2 ? 'show' : '')}>yarn</span>
                   </div>
                   <div className='skill-box'>
