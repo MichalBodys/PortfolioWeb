@@ -1,7 +1,30 @@
-
 header {
     height: 80vh;
     margin-bottom: 15%;
+
+    // .logo {
+    //     position: absolute;
+    //     opacity: 0;
+    //     top: 0;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    //     max-width: 350px;
+    //     max-height: 350px;
+    //     animation: ShowText 1.5s .3s forwards;
+    //     transition: opacity;
+    //     transition: transform .3s;
+
+
+
+    //     img {
+    //         width: 100%;
+    //         height: 100%;
+    //     }
+    // }
+    // .logo:hover{
+    //     width: 360px;
+    //     height: 360px;
+    // }
 
 }
 
@@ -15,8 +38,7 @@ header {
         opacity: 0;
         font-size: 6em;
         line-height: 1.5em;
-        animation: ShowText 3.5s .3s forwards ;
+        animation: ShowText 1.5s .3s forwards;
         transition: opacity;
     }
 }
-

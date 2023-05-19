@@ -4,6 +4,7 @@ import TextAnimation from '../../Components/TextAnimation/TextAnimation'
 import './AboutMe.scss'
 import { motion, useInView, useAnimation } from 'framer-motion'
 
+
 const AboutMe = () => {
 
   const ref = useRef(null);
@@ -31,7 +32,7 @@ const AboutMe = () => {
             animate={leftControls}
             transition={{duration: 1}}
              className='about__me-text'  >
-              <h2>i'm Michał,<br/> and i like to make things <br/> that</h2>
+              <h2>my name is michał,<br/>and i'm here to share<br/> my</h2>
               <div className='animate-text'>
                 <TextAnimation/>
               </div>
@@ -46,9 +47,12 @@ const AboutMe = () => {
           animate={rightControls}
           transition={{duration: 1}}
           className='about_me-icons'>
-            <a href="https://www.linkedin.com/in/michal-bodys/"><i className="fa-brands fa-linkedin socials" ></i></a>
-            <a href="https://github.com/MichalBodys"><i className="fa-brands fa-github socials"></i></a>
-            <a href='mailto: bodysmic@gmail.com'><i className="fa-solid fa-envelope socials"></i></a>
+            <a href="https://www.linkedin.com/in/michal-bodys/"><i alt="got to my linkedin" className="fa-brands fa-linkedin socials" ></i></a>
+            <a href="https://github.com/MichalBodys"><i alt="got to my github" className="fa-brands fa-github socials"></i></a>
+            <a href='mailto: bodysmic@gmail.com'><i alt="send me a email"  className="fa-solid fa-envelope socials"></i></a>
+            <a href='https://drive.google.com/file/d/1VVTQDh8JIHx4Tp3k8JnBfjlLIJnPzR5I/view?usp=share_link'><i alt="go to my resume" className="fa-solid fa-file socials"></i></a>
+
+
           </motion.div>
     </section>
     )

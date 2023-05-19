@@ -18,8 +18,10 @@ const NavBar = () => {
   return(
         <nav className='nav__bar' >
           <div className='nav__bar-author'>
-              <a href='#header'><h2 className='author'>michał bodys</h2></a>
-              <p>portfolio<span className='year'>{year}</span></p>
+              <div>
+                <a href='#header'><h2 className='author'>michał bodys</h2></a>
+                <p>portfolio<span className='year'>{year}</span></p>
+              </div>
             </div>
             <div className={`nav__bar-links ${isActive ? 'active': ''}`}  style={isActive ? {clipPath: 'circle(140% at 80% 90%)'} : {} }>
               <a href="#about" className='nav__link' onClick={clickHandler}>about</a>

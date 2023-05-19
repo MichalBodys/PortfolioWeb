@@ -41,14 +41,14 @@ const Carousel = ({ projectId }) => {
         {project[0].photos.map(photo =>
         <div className='carousel-slides' key={photo.nmb} style={{ transform: `translateX(-${curr * 100}%)`}}>
           <div className='carousel-slide'>
-            <img src={photo.src} alt="" />
+            <img src={photo.src} alt={photo.description} />
             <p className='slide-description'>{photo.description}</p>
           </div>
         </div>
          )}
          <div className='carousel-buttons'>
-            <button onClick={prev}><i className="fa-solid fa-angle-left"></i></button>
-            <button onClick={next}><i className="fa-solid fa-angle-right"></i></button>
+            <div onClick={prev}><i className="fa-solid fa-angle-left"></i></div>
+            <div onClick={next}><i className="fa-solid fa-angle-right"></i></div>
         </div>
         <div className='carousel-dots'>
           <div className={curr === 0 ? 'active' : ''}></div>

@@ -50,7 +50,9 @@
 
     .about__me {
         font-size: 0.9em;
+        flex-direction: column;
 
+        justify-content: space-evenly;
     }
 
 
@@ -81,6 +83,15 @@
         .contact_title {
             font-size: 4em;
         }
+
+        .form_box {
+            justify-content: space-between;
+
+            p {
+                margin: 0 auto;
+
+            }
+        }
     }
 
 
@@ -96,6 +107,17 @@
             }
         }
     }
+
+    .form_box {
+        justify-content: space-between;
+
+        p {
+            margin: 0 auto;
+
+        }
+    }
+
+
 }
 
 @media(min-width:1300px) {
@@ -236,6 +258,7 @@
         }
     }
 
+
     // Projects //
 
 
@@ -285,10 +308,11 @@
         font-size: 0.8em;
 
         .form_box {
-
+            justify-content: space-between;
 
             p {
                 font-size: 4em;
+                margin: 0 auto;
             }
         }
     }
@@ -381,6 +405,14 @@
             font-size: 1em;
             text-align: center;
             line-height: 1em;
+
+            .social-list{
+
+                .resume{
+                    font-size: .2em;
+                }
+            }
+
         }
     }
 

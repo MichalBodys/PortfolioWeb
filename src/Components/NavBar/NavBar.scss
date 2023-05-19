@@ -18,8 +18,12 @@
     border-radius: $radius;
     animation: ShowText 3s .2s forwards;
 
+  
 
     .nav__bar-author{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         transition: color .3s;
     }
 
