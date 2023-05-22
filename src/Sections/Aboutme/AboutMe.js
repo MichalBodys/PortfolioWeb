@@ -50,7 +50,7 @@ const AboutMe = () => {
             <a href="https://www.linkedin.com/in/michal-bodys/"><i alt="got to my linkedin" className="fa-brands fa-linkedin socials" ></i></a>
             <a href="https://github.com/MichalBodys"><i alt="got to my github" className="fa-brands fa-github socials"></i></a>
             <a href='mailto: bodysmic@gmail.com'><i alt="send me a email"  className="fa-solid fa-envelope socials"></i></a>
-            <a href='https://drive.google.com/file/d/1VVTQDh8JIHx4Tp3k8JnBfjlLIJnPzR5I/view?usp=share_link'>
+            <a href='https://drive.google.com/file/d/1toPwy-_9tjTnBolZYrbfvjV3Yz8QuX11/view?usp=sharing'>
               <svg xmlns="http://www.w3.org/2000/svg" class="socials icon icon-tabler   icon-tabler-file-cv" width="45" height="45" viewBox="5 -1 24 24" stroke-width="1" stroke="#092521" fill="currentColor" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                         <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
@@ -66,5 +66,5 @@ const AboutMe = () => {
     )
 }
 
-
+  
 export default AboutMe
