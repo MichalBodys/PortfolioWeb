@@ -49,15 +49,17 @@ const Contact = () => {
         >
             <h2 className='contact_title'>contact me </h2>
           <div className='form_box'>
+            <img className='logo' src="../assets/img/logoMBW.png" alt="" />
+
             <form ref={form} className='contact_form' onSubmit={sendEmail}>
                 <label htmlFor="name">name</label>
                 <input  ref={nameInput} type="text" name='user_name' placeholder='Full Name' required/>
 
                 <label htmlFor="phone" >phone</label>
-                <input ref={phoneInput}  type="number" name='user_phone' placeholder='Phone number' required/>
+                <input ref={phoneInput}  type="number" name='user_phone' placeholder='number' required/>
 
                 <label htmlFor="email">e-mail</label>
-                <input  ref={emailInput} type="email" name='user_email' placeholder='E-mail' required/>
+                <input  ref={emailInput} type="email" name='user_email' placeholder='E-mail adress' required/>
 
                 <label htmlFor="msg">message</label>
                 <textarea ref={msgInput} name='message' placeholder='your message' required></textarea>

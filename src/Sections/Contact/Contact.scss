@@ -1,8 +1,18 @@
 @import '../../Styles/App.scss';
 
 .contact {
+    position: relative;
     background: $color-second;
+    z-index: 1;
+    overflow: hidden;
 
+    .logo{
+        position: absolute;
+        z-index: -1;
+        left: 72%;
+        top: 60%;
+        transform: translate(-50%, -50%);
+    }
 
     .contact_title {
         text-align: center;
@@ -13,6 +23,7 @@
     .form_box {
         display: flex;
         align-items: center;
+        justify-content: space-between;
 
 
 

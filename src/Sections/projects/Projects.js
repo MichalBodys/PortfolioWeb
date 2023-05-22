@@ -11,6 +11,7 @@ const Projects = () => {
 
     return(
       <section id='projects' className='projects container'>
+        <h2 className='section-title'>projects</h2>
         {projects.map(project =>
         <div className='project_box' key={project.id}>
             <div className='project-card'>

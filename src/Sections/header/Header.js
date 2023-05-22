@@ -16,8 +16,8 @@ const Header = (params) => {
                     {/* <div className='logo'>
                         <img src="/assets/img/LogoMBNB.png" alt="" />
                     </div> */}
-                <h1 className='web-title'>hello.<br/> this is my portfolio website,<br/>
-                i'm front end developer</h1>
+                <h1 className='web-title'>hello,<br/> this is my portfolio website<br/>
+                i'm front-end developer.</h1>
                 </div>
             </div>
 

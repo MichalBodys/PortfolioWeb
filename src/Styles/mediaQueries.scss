@@ -51,15 +51,27 @@
     .about__me {
         font-size: 0.9em;
         flex-direction: column;
-
         justify-content: space-evenly;
+
+
+        svg{
+            width: 40px;
+            height: 40px;
+        }
     }
 
 
     .projects {
+
+        .section-title{
+            font-size: 3.5em;
+        }
+
         .project_box {
             flex-direction: column;
         }
+
+
     }
 
 
@@ -87,8 +99,13 @@
         .form_box {
             justify-content: space-between;
 
+            .logo{
+                // opacity: .3;
+                // left: 60%;
+            }
+
             p {
-                margin: 0 auto;
+                // margin: 0 auto;
 
             }
         }
@@ -111,8 +128,14 @@
     .form_box {
         justify-content: space-between;
 
+        .logo{
+            opacity:.6;
+
+            top: 50%;
+        }
+
         p {
-            margin: 0 auto;
+            // margin-left: 25%;
 
         }
     }
@@ -141,6 +164,12 @@
     .about__me {
         font-size: 2em;
 
+
+        svg{
+            width: 90px;
+            height: 90px;
+        }
+
     }
 
 
@@ -154,6 +183,12 @@
                 font-size: 1.6em;
                 height: 200px;
                 width: 450px;
+
+                .project_visit{
+
+                    width: 200px;
+                    height: 40px;
+                }
             }
 
 
@@ -184,6 +219,10 @@
 
     // Contact //
     .contact {
+
+        .logo{
+            left: 70%;
+        }
 
         .contact_title {
             font-size: 4em;
@@ -216,6 +255,11 @@
     // Footer //
     .footer-data {
         font-size: 1.5em;
+
+        svg{
+            height: 38px;
+            width: 38px;
+        }
     }
 
 
@@ -333,6 +377,24 @@
     .about__me {
         font-size: 0.7em;
 
+        svg{
+            width: 35px;
+            height: 35px;
+        }
+
+    }
+
+
+    .form_box{
+        p{
+            margin-right: 20%; ;
+        }
+
+        .logo{
+            opacity: .3;
+            left: 55%;
+            top: 57%;
+        }
     }
 }
 
@@ -425,6 +487,10 @@
 
         .form_box {
             justify-content: space-between;
+
+            .logo{
+                opacity: .1;
+            }
 
             p {
                 margin: 0 auto;

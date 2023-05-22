@@ -16,7 +16,7 @@ const initialState = {
               {
                  nmb: 4,
               src: './assets/img/magda1.png',
-              description: 'layout made for individual requirements  '
+              description: 'custom made layout'
             },
             {
                nmb: 5,

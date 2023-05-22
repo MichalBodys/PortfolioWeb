@@ -42,7 +42,7 @@ const Skills = () => {
                   <button onClick={clickHandler}>{btnMsg}</button>
                 <div  className="skills-box">
                 <div className='skill-box'>
-                    <span className={(count === 0 ? 'show' : '')}>programing technologies that i already used</span>
+                    <span className={(count === 0 ? 'show' : '')}>programming technologies that i already used</span>
                   </div>
                   <div className='skill-box'>
                     <span className={(count === 1 ? 'show' : '')}>html</span>
