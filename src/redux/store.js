@@ -11,6 +11,7 @@ const initialState = {
             id: 1,
             title: 'speach therapist website',
             release: '04.2023',
+            tech: 'javascript, nunjucks, css, netlify cms',
             url: 'https://logopeda-dialog.pl/',
             photos: [
               {
@@ -36,6 +37,7 @@ const initialState = {
             id: 2,
             title: 'simple todo list',
             release: '11.2022',
+            tech: 'react, redux, react router, scss',
             url: 'https://silver-sawine-23a225.netlify.app',
             photos: [
               {
@@ -55,7 +57,32 @@ const initialState = {
             }
 
           ]
-        }
+        },
+        {
+          id: 3,
+          title: 'music app',
+          release: '26.07.2023',
+          tech: 'vue, pinia, firebase, vite, tailwind',
+          url: 'https://music-app-michalbodys.vercel.app/',
+          photos: [
+            {
+            nmb: 1,
+            src: './assets/img/ma1.png',
+            description: 'playing, adding ,commenting songs and translation of website language'
+          },
+          {
+            nmb: 2,
+            src: './assets/img/ma2.png',
+            description: 'account making and authorisation via firebase'
+          },
+          {
+            nmb: 3,
+            src: './assets/img/ma3.png',
+            description: 'posibility to upload your own music, changing genre and titles'
+          }
+
+        ]
+      }
     ],
 
     sentences:['work well', 'connect people', 'look great'],

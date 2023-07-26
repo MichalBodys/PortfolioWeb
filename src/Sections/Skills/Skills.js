@@ -47,21 +47,26 @@ const Skills = () => {
                   <div className='skill-box'>
                     <span className={(count === 1 ? 'show' : '')}>html</span>
                     <span className={(count === 1 ? 'show' : '')}>css</span>
-                    <span className={(count === 1 ? 'show' : '')}>sass</span>
                     <span className={(count === 1 ? 'show' : '')}>javascript</span>
                     <span className={(count === 1 ? 'show' : '')}>react</span>
+                    <span className={(count === 1 ? 'show' : '')}>Vue</span>
                   </div>
                   <div className='skill-box'>
                     <span className={(count === 2 ? 'show' : '')}>redux</span>
-                    <span className={(count === 2 ? 'show' : '')}>Git</span>
+                    <span className={(count === 2 ? 'show' : '')}>pinia</span>
+                    <span className={(count === 2 ? 'show' : '')}>Vite</span>
+                    <span className={(count === 2 ? 'show' : '')}>sass</span>
                     <span className={(count === 2 ? 'show' : '')}>npm</span>
-                    <span className={(count === 2 ? 'show' : '')}>nunjucks</span>
                     <span className={(count === 2 ? 'show' : '')}>yarn</span>
+                    <span className={(count === 2 ? 'show' : '')}>nunjucks</span>
                   </div>
                   <div className='skill-box'>
                     <span className={(count === 3 ? 'show' : '')}>bootstrap</span>
+                    <span className={(count === 3 ? 'show' : '')}>tailwind</span>
                     <span className={(count === 3 ? 'show' : '')}>rwd</span>
                     <span className={(count === 3 ? 'show' : '')}>ajaX</span>
+                    <span className={(count === 3 ? 'show' : '')}>Git</span>
+                    <span className={(count === 3 ? 'show' : '')}>firebase</span>
                   </div>
                   <div className='skill-box'>
                     <span className={(count === 4 ? 'show' : '')}>i learn something new every day</span>
